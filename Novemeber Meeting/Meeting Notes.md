@@ -1,0 +1,1 @@
+Thank you all who were able to make it to the meeting. We had a wonderful interaction in walking through the PowerShell used to enhance SCCM and Tim's discussion on creating efficient PowerShell to work with large collections of objects. The example code will be committed to this repo during the next week.
