@@ -1,3 +1,13 @@
+<#
+.SYNOPSIS
+    Sets BITS download jobs to foreground for the number of max threads specified.
+.DESCRIPTION
+    This script sets the first 8 BITS download jobs to foreground to speed up content distribution. 8 threads was the 
+    chosen number as BITS seemed to go a little sideways when running more than 8 parallel downloads on Server 2012. We
+    can set the BITS jobs to foreground as we've QOS on the WAN to ensure we don't utilize excessive amounts of WAN link.
+    This setting will loop for ~24 hours to ensure that 8 BITS jobs are downloading in foregroud all the time. The script is deployed as
+    an SCCM baseline that runs once a day.
+#>
 function runme {
 $MaxThreads = 8
 $ShouldRun = $true
