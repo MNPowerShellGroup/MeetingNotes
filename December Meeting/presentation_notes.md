@@ -1,6 +1,4 @@
-# Header
-
-Help yourself with comment based help
+# Help yourself with comment based help
 
 ## Sources
 
