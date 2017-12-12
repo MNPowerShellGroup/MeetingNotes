@@ -19,11 +19,13 @@
     
     - Example for script
 
-        - C:\githubprojects\MeetingNotes\December Meeting [master ≡]> Get-Help .\adr_wrapper.ps1
-    
+        ```powershell
+        C:\githubprojects\MeetingNotes\December Meeting [master ≡]> Get-Help .\adr_wrapper.ps1
+        ```
+
     - Example for function within script. Note if the script has mandatory parameters you must pass the parameters
 
-        ```
+        ```powershell
         C:\githubprojects\MeetingNotes\December Meeting [master ≡]> . .\adr_wrapper.ps1 -SiteCode nul -ADRName null ; get-help removeupdate
         ```
 ## Comment based help structure
