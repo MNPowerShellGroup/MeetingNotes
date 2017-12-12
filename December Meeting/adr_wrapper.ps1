@@ -39,6 +39,17 @@ $startingLocation = Get-Location
 #region functions
 function removeUpdate
 {
+<#
+.SYNOPSIS
+    Removes passed updates from software update group and package.
+.DESCRIPTION
+    Uses SCCM cmdlets and straight WMI calls to remove a software update from a software update group and software update package by the passed software update CI_ID.
+
+.PARAMETER update
+    Mandatory parameter update is used to idenitify the update to be removed from the software update group
+
+#>
+
 Param
 (
     [Parameter(Mandatory=$true)]

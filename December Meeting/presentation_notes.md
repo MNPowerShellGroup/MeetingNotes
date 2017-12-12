@@ -2,7 +2,12 @@
 
 ## Sources
 
-source:  <https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-5.1&viewFallbackFrom=powershell-Microsoft.PowerShell.Core>
+sources:  
+    - <https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-5.1&viewFallbackFrom=powershell-Microsoft.PowerShell.Core>
+
+    - <http://mikefrobbins.com/2016/12/07/locations-for-comment-based-help-in-powershell-functions/>
+
+    - <http://www.sapien.com/blog/2015/02/18/troubleshooting-comment-based-help/>
 
 
 ## What is comment based help
@@ -10,8 +15,15 @@ source:  <https://docs.microsoft.com/en-us/powershell/module/microsoft.powershel
 -Comment based help is help for your script or function written into the script or function itself via a series of comments. It can be used to describe what the script or function does, list what parameters it accepts, show examples of utilization, and more. See source link above.
 
 -Comment based help can be access using the get-help cmdlet
+
+-Note that accessing a functions comment based help in a script you must dot source your script then run the get-help cmdlet against the function name
     
-    -show example from adr_wrapper.ps1
+    -Example for script
+
+        - C:\githubprojects\MeetingNotes\December Meeting [master ≡]> Get-Help .\adr_wrapper.ps1
+    
+    -Example for function within script. Note if the script has mandatory parameters you must pass the parameters
+        - C:\githubprojects\MeetingNotes\December Meeting [master ≡]> . .\adr_wrapper.ps1 -SiteCode nul -ADRName null ; get-help removeupdate
 ## Comment based help structure
 
 -Comment based help is written within a comment block
@@ -41,6 +53,19 @@ source:  <https://docs.microsoft.com/en-us/powershell/module/microsoft.powershel
 
 ## Auto generated help
 
+-Get-Help cmdlet auto generates the following list content
+
+    -Name
+    
+    -Syntax
+
+    -Parameter List
+
+    -Common Parameters
+
+    -Parameter Attribute Table
+
+    -Remarks
 
 
 ## Where to use comment based help in script
@@ -66,6 +91,5 @@ source:  <https://docs.microsoft.com/en-us/powershell/module/microsoft.powershel
 -Before function keyword
 
     -Not preferred, this historically is where I'd describe the function. But I see the benefits of the help within the funtion to keep it self contained.
-
 
 
