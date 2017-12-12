@@ -32,8 +32,11 @@
 
 - Comment based help is written within a comment block
 
-    - <# and# >, signifiy the beginning and end of a script block
-
+    ```powershell
+     <# 
+    Enclose your comment based help in a comment block like this
+    #>
+    ```
 - Keywords in the help are preceded by a . and generally are written all capital letters and followed by and description that is indented on the next line.
 
     - You can use one to all of the keywords for comment based help.
