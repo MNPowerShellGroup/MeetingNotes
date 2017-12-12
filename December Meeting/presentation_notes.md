@@ -8,6 +8,10 @@
 
 - <http://www.sapien.com/blog/2015/02/18/troubleshooting-comment-based-help>
 
+- Good information from June Blender for a deep dive into PowerShell Help
+
+- <https://github.com/juneb/PowerShellHelpDeepDive>
+
 
 ## What is comment based help
 
@@ -34,13 +38,14 @@
 
     ```powershell
      <# 
-    Enclose your comment based help in a comment block like this
+    Enclose your comment based help in a comment block like this.
+    It works well for multipled lines of comments which are used in writting comment based help
     #>
     ```
 - Keywords in the help are preceded by a . and generally are written all capital letters and followed by and description that is indented on the next line.
 
     - You can use one to all of the keywords for comment based help.
-    - There are many keywords, here's a short list of main keywords. See the source above for a more exhaustive list
+    - There are many keywords, here's a short list of main keywords. See the Microsoft doc linked above for a more exhaustive list
     
         - SYNOPSIS
 
@@ -60,7 +65,7 @@
 
 ## Auto generated help
 
-- Get-Help cmdlet auto generates the following list content
+- Get-Help cmdlet auto generates the following list content that will display along with the hel your right
 
     - Name
     
@@ -99,4 +104,12 @@
 
     - Not preferred, this historically is where I'd describe the function. But I see the benefits of the help within the funtion to keep it self contained.
 
+## When to use comment based help
 
+ - Comment based help acts as good documention of the intention an utilzation of the script or function. Having good comment based help enables someone to understand the script without having to open the script in an editor. 
+
+ - Comment based help also works well for those troubleshooting the script as it offers information about the intent and can speak to the work the script is doing and why. This offers some advantages over inline comments as it's stored in one place and trouble spots can be called out
+ 
+ - As a contract with the user of the script. Describe what the script or function will do and inform the user of what to expect and for what to watch.
+
+ - As Help Driven Development. Using the help as that contract helps drive what code gets written to meet the comittment create in the help and helps keep us directed to keep scope creep down.
