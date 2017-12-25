@@ -25,6 +25,7 @@
     - Veris group ATD
       - github search for powershellempire, powerview, powersploit, powerup
         - <https://github.com/PowerShellMafia/PowerSploit>
+        - <https://github.com/EmpireProject/Empire>
         
   - Potential for another presenter, should find out week of December 18th
   
