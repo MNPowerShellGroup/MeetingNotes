@@ -48,7 +48,7 @@ param(
   [Parameter(ParameterSetName="LiteralPath",Position=0,Mandatory=$TRUE)]
     [String[]] $LiteralPath,
   [Parameter(Position=1)]
-    [String] $HashType="SHA1"
+    [String] $HashType="MD5"
 )
 
 begin {
@@ -121,19 +121,22 @@ $newsize.width = 500
 $pswindow.buffersize = $newsize
 
 
-If (test-path -Path "<suppliedPath>")
-{
-    $file = Get-ItemProperty -Path "<suppliedPath>" | HashCheck -erroraction silentlyContinue
+$suppliedPath = 'C:\Windows\explorer.exe'
+$suppliedPath2 = $null
 
-    $output = $file.path + "," + $file.'SHA1 hash'
+If (test-path -Path "$suppliedPath")
+{
+    $file = Get-ItemProperty -Path "$suppliedPath" | HashCheck -erroraction silentlyContinue
+
+    $output = $file.path + "," + $file.'MD5 hash'
 
     Write-Output $output
 }
-ElseIf (test-path -Path "<suppliedPath2>")
+ElseIf (test-path -Path "$suppliedPath2")
 {
-    $file = Get-ItemProperty -Path "<suppliedPath2>" | HashCheck -erroraction silentlyContinue
+    $file = Get-ItemProperty -Path "$suppliedPath2" | HashCheck -erroraction silentlyContinue
 
-    $output = $file.path + "," + $file.'SHA1 hash'
+    $output = $file.path + "," + $file.'MD5 hash'
 
     Write-Output $output
 }

@@ -48,7 +48,7 @@ param(
   [Parameter(ParameterSetName="LiteralPath",Position=0,Mandatory=$TRUE)]
     [String[]] $LiteralPath,
   [Parameter(Position=1)]
-    [String] $HashType="MD5"
+    [String] $HashType="md5"
 )
 
 begin {
@@ -113,17 +113,18 @@ process {
 
 
 
-$Output=Get-ChildItem c:\ -include *.exe -recurse -erroraction silentlyContinue |HashCheck -erroraction silentlyContinue
+$Output= Get-ChildItem c:\windows\*.* -include *.exe -erroraction silentlyContinue |HashCheck -erroraction silentlyContinue
 #where {$_.'md5 hash' -in "hexidecimalString1","hexidecimalString2"} <#Works in V3#>
 
 foreach ($a in $Output) 
 {
-if (($a.'md5 hash'-eq "hexidecimalString1")  <#name of file#> `
+if (($a.'md5 hash'-eq "92B369312AF5D0B83AEF82D5DE0428D2")  <#explorer.exe#> `
 -or ($a.'md5 hash' -eq "hexidecimalString2") <#name of file#> `
 )
 {
 
 
-$A.Path+"," +$a.'MD5 Hash'
+$A.Path+"," +$a.'md5 Hash'
 
 }} 
+
