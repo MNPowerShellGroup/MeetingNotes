@@ -1,0 +1,31 @@
+## Themes
+  - Blue team
+    - Auditing, lots of scanning
+    - How do we develop an auditing solution
+      - Discover and remediate
+    - Unquoted service paths (script)
+    - uninstall strings (script)
+    - FIM hash reporting (script)
+    - space reports for disk space
+  - Red team
+    - Bash Bunny
+      - Overview, from hak5
+        - 5-10 minutes, pay device
+      - Bash bunny quickcreds demo
+        - 5 minutes
+    - invoke-mimikats
+      - overview
+      - demo
+        - 10-15 minutes
+   - Tools and references
+      - Hak 5
+      - information on GitHub 
+      - <https://www.hak5.org> 
+      - <https://github.com/hak5>
+    - Veris group ATD
+      - github search for powershellempire, powerview, powersploit, powerup
+        - <https://github.com/PowerShellMafia/PowerSploit>
+        - <https://github.com/EmpireProject/Empire>
+        
+  - Potential for another presenter, should find out week of December 18th
+  
