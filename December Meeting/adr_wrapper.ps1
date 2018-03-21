@@ -19,6 +19,9 @@
     Mandatory parameter to target which ADR to run and clean up
 .EXAMPLE
     .\adr_wrapper.ps1 -SiteCode pri -ADRName WindowsClient
+
+    good example
+
 .NOTES
     Configuartion Manager console is required to be installed to leverage location to import modules and run cmdlets
     Must be run from SMS Provider (this could be adjusted using -computername for some remote WMI calls)
