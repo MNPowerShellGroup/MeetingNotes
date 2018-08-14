@@ -1,0 +1,1 @@
+Get-WmiObject -Class Win32_Process | Select-Object name, @{Name="CPU_Time"; Expression={$_.KernalModetime + $_.UserModeTime}} | Sort-Object CPU_Time -Descending | Select-Object -First 5

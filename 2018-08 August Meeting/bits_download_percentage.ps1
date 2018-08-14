@@ -1,0 +1,1 @@
+Get-BitsTransfer -Allusers | ? { $_.jobstate -ne 'transferred'} | select jobid, jobstate,@{Label="percent Complete"; EXPRESSION={($_.BytesTransferred/$_.BytesTotal*100)} }
