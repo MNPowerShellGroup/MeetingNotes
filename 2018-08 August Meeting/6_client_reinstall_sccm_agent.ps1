@@ -42,7 +42,7 @@ function ClientUninstall
                     if ($(test-path -Path "C:\temp\ccmsetup.exe")) {
                         remove-item "C:\temp\ccmsetup.exe" -force 
                         }
-                    $URL = "http://tcttsapd001p.hq.target.com/CCM_CLIENT/ccmsetup.exe"
+                    $URL = "http://<MP>/CCM_CLIENT/ccmsetup.exe"
                     $OUT = "C:\temp\ccmsetup.exe"
                     $GetCCMSETUP = New-Object System.Net.WebClient
                     try
@@ -246,7 +246,7 @@ function ClientInstall
                     {
                     New-Item "C:\temp" -type directory | Out-Null
                     }
-                $URL = "http://tcttsapd001p.hq.target.com/CCM_CLIENT/ccmsetup.exe"
+                $URL = "http://<MP>/CCM_CLIENT/ccmsetup.exe"
                 $OUT = "C:\temp\ccmsetup.exe"
                 $GetCCMSETUP = New-Object System.Net.WebClient
                     try
@@ -265,7 +265,7 @@ function ClientInstall
                 Copy-Item "c:\temp\ccmsetup.exe" -Destination "C:\windows\ccmsetup" -Force | Out-Null
                 # run CCMsetup.exe 
                 Write-Verbose "Running CCMSETUP.EXE"
-                CMD /c "C:\WINDOWS\ccmsetup\ccmsetup.exe SMSSITECODE=APD SMSSLP=tcttsapd001p.HQ.TARGET.COM /mp:tcttsapd001p.HQ.TARGET.COM /BITSPriority:High"
+                CMD /c "C:\WINDOWS\ccmsetup\ccmsetup.exe SMSSITECODE=<site> SMSSLP=<mp> /mp:<mp> /BITSPriority:High"
 
                 # wait for ccmsetup to complete
                 $CCMsetupRunning = $true
