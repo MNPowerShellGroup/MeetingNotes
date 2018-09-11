@@ -16,8 +16,6 @@ Understanding the .Net objects in your PowerShell scripts
 
 ## Discussion
 
-
- 
 ## Attendees
 
   20
