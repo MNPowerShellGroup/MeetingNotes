@@ -1,2 +1,0 @@
-Attendees:  20
-
