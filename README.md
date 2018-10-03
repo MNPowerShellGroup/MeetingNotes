@@ -1,3 +1,3 @@
 # MeetingNotes
 
-Repository for monthly Minnesota PowerShell Users Group.
+Repository for monthly Minnesota PowerShell Automation Group.
