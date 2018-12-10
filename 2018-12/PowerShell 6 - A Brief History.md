@@ -26,7 +26,7 @@ PowerShell 6.0 was release in January of this year. It was releases as an open-s
   * WPF - <https://github.com/dotnet/wpf>
   * WinForms - <https://github.com/dotnet/winforms>
   * WinUI XAML - <https://github.com/Microsoft/microsoft-ui-xaml>
-  * More of WinUI will be open sourced. They are starting with XAML.
+    * More of WinUI will be open sourced. They are starting with XAML.
 
 ## .NET standard
 
