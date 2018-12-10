@@ -6,7 +6,7 @@ PowerShell 6.0 was release in January of this year. It was releases as an open-s
 
 ## PowerShell 6
 
-* Get it onGithub - <https://github.com/PowerShell> - Here you'll find the source code for PowerShell, the docs, and any new releases. You can watch the repository for new releases or go to <https://github.com/PowerShell/PowerShell/releases>. The docs can be found directly at <https://github.com/PowerShell/PowerShell-Docs>.
+* Get it on Github - <https://github.com/PowerShell> - Here you'll find the source code for PowerShell, the docs, and any new releases. You can watch the repository for new releases or go to <https://github.com/PowerShell/PowerShell/releases>. The docs can be found directly at <https://github.com/PowerShell/PowerShell-Docs>.
 * Who's using it? <https://aka.ms/psgithubbi>. Microsoft PowerBI dashboard.
 
 ## PowerShell core 6 and .NET core release timelines
@@ -35,3 +35,8 @@ PowerShell 6.0 was release in January of this year. It was releases as an open-s
 ## .NET core and PowerShell core integration
 
 PowerShell 6 tied closely
+
+## .NET framework future
+
+* Microsoft will have another release of .NET framework next year. The version will be 4.8. 4.8 is considered to be 'feature complete'. Generally, once a product is considered feature complete it will no longer receive feature enhancements.
+* There is no hurry move from .NET framework to .NET core. However, after .NET framework 4.8 investment appears mainly focused on .NET core.
