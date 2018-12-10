@@ -6,7 +6,6 @@ PowerShell 6.0 was release in January of this year. It was releases as an open-s
 
 ## PowerShell 6
 
-* Get it onGithub - <https://github.com/PowerShell> - Here you'll find the source code for PowerShell, the docs, and any new releases. You can watch the repository for new releases or go to <https://github.com/PowerShell/PowerShell/releases>. The docs can be found directly at <	https://github.com/PowerShell/PowerShell-Docs>. 
+* Get it onGithub - <https://github.com/PowerShell> - Here you'll find the source code for PowerShell, the docs, and any new releases. You can watch the repository for new releases or go to <https://github.com/PowerShell/PowerShell/releases>. The docs can be found directly at <https://github.com/PowerShell/PowerShell-Docs>.
   
 * Who's using it? <https://aka.ms/psgithubbi>
-
