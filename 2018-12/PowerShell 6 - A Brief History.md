@@ -29,6 +29,7 @@ PowerShell 6.0 was release in January of this year. It was releases as an open-s
   * More of WinUI will be open sourced. They are starting with XAML.
 
 ## .NET standard
+
 .NET standard is a set of APIs that all .NET platforms have to implement. It can be found on GitHub at <https://github.com/dotnet/standard>.
 
 ## .NET core and PowerShell core integration
