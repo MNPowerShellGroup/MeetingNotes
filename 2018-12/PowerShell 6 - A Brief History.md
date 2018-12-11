@@ -48,3 +48,7 @@ For implicit remoting is when you run a proxy command, instead of running the co
 
 * Microsoft will have another release of .NET framework next year. The version will be 4.8. 4.8 is considered to be 'feature complete'. Generally, once a product is considered feature complete it will no longer receive feature enhancements.
 * There is no hurry move from .NET framework to .NET core. However, after .NET framework 4.8 investment appears mainly focused on .NET core.
+
+## Summary
+
+PowerShell core and .NET core appears to be the future for .NET development and PowerShell scripting. Given the drive to reach feature parity, the likely soon to be designated 'feature complete' .NET framework 4.8, and the general direction that Microsoft appears to be taking for their software; it seems that developing new scripts and tools to leverage PowerShell core 6 will go a long way in making our scripts work long into the future.
