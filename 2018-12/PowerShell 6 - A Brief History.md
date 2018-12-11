@@ -32,9 +32,15 @@ PowerShell 6.0 was release in January of this year. It was releases as an open-s
 
 .NET standard is a set of APIs that all .NET platforms have to implement. It can be found on GitHub at <https://github.com/dotnet/standard>.
 
-## .NET core and PowerShell core integration
+## PowerShell Core 6 features
 
-PowerShell 6 tied closely
+PowerShell 6 added Active Directory module in 6.1 as the most requeste feature. PowerShell core 6 will continue to have features and modules added until there is 100% command coverage. This will likely take multiple releases of PowerShell core 6 as that functionality is built in.
+
+## Windows Compatibility Module
+
+The Windows compatibility module was released in November to give PowerShell 6 core access to PowerShell modules that not yet available natively in PowerShell Core 6. The Windows compatiblity module release and install information can be found at <https://blogs.msdn.microsoft.com/powershell/2018/11/15/announcing-general-availability-of-the-windows-compatibility-module-1-0-0/>.
+
+To see the available list of modules, run Get-WinModule. To run this you must have PowerShell remoting configured. This is because the Windows compatibility module takes advantage of the 'implicit remoting' feature in PowerShell. Pipe Get-Module to Out-File to print a list of modules available for import.
 
 ## .NET framework future
 
