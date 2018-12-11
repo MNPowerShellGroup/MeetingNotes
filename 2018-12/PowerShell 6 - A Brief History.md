@@ -42,7 +42,7 @@ While we're waiting for feature parity with PowerShell core 6 to Windows PowerSh
 
 To see the available list of modules, run Get-WinModule. To run this you must have PowerShell remoting configured. This is because the Windows compatibility module takes advantage of the 'implicit remoting' feature in PowerShell. Pipe Get-Module to Out-File to print a list of modules available for import. E.G. 'Get-WinModule | Out-File -FilePath C:\temp\WinModuleModules.txt'
 
-For implicit remoting is when you run a proxy command, instead of running the command on the local computer, the proxy runs the real command in a session on the remote computer and returns the results to the local session.
+For implicit remoting is when you run a proxy command, instead of running the command on the local computer, the proxy runs the real command in a session on the remote computer and returns the results to the local session. There are some limitations to using implicit remoting, since everything is done using the remoting protocol, the imported cmdlets will return deserialized objects that only contain properties.
 
 ## .NET framework future
 
