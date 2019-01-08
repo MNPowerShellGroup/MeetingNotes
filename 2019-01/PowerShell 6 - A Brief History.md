@@ -18,10 +18,11 @@ PowerShell 6.0 was release in January of this year. It was releases as an open-s
 * .NET core 2.2 released December 2018
 * Powershell 6.2 in preview 2 in December 2018
 * .NET core 3.0 projected release early 2019
+  * Preview 1 can be found here - <https://github.com/dotnet/core/blob/master/release-notes/3.0/preview/3.0.0-preview1.md>
 
-## Announcements from Connect
+## Announcements from Connect in December 2018
 
-* .NET core 3.0 is in preview and will be released earl next year. The first releases of .NET core where focused on web app based development and serverside enhancements. .NET core 3 will turn its attention to the desktop experience.
+* .NET core 3.0 is in preview and will be released early next year. The first releases of .NET core where focused on web app based development and serverside enhancements. .NET core 3 will turn its attention to the desktop experience.
 * WPF, WinForms, and WinUI are now open-source and available on GitHub.
   * WPF - <https://github.com/dotnet/wpf>
   * WinForms - <https://github.com/dotnet/winforms>
@@ -51,4 +52,4 @@ For implicit remoting is when you run a proxy command, instead of running the co
 
 ## Summary
 
-PowerShell core and .NET core appears to be the future for .NET development and PowerShell scripting. Given the drive to reach feature parity, the likely soon to be designated 'feature complete' .NET framework 4.8, and the general direction that Microsoft appears to be taking for their software; it seems that developing new scripts and tools to leverage PowerShell core 6 will go a long way in making our scripts work long into the future.
+PowerShell core and .NET core is the future for .NET development and PowerShell scripting. There is the drive to reach feature parity. The likely soon to be designated 'feature complete' .NET framework 4.8 coupled with the general direction that Microsoft appears to be taking for their software. It appears that developing new scripts and tools to leverage PowerShell core 6 will go a long way in making our scripts work long into the future.
