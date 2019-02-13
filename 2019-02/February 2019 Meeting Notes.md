@@ -9,6 +9,7 @@ Sapien <https://www.sapien.com/>
 Personal donations - Thank you very much!
 
 ## Presenter 1
+
 Don Jacobs
 
 ## GitHub with VSCode Presentation Overview
@@ -19,7 +20,8 @@ We'll start by looking at VSCode, then installing Git on the computer and then a
 
 Whether you are the lone scripter in your company, or part of an international scripting team, we'll show how the benefits of GitHub can make your scripting life easier.
 
-We'll discuss
+We'll discuss:
+
 - Why source code is important
 - Real world experience of using source control within VSCode
 - When to branch
@@ -37,6 +39,7 @@ We'll discuss
 - Stress syncing code before pushing code and creating a pull request
 
 ## Presenter 2
+
 Tim Curwick
 
 ## PowerShell Punctuation Presentation Overview
