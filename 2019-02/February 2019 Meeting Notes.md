@@ -47,6 +47,17 @@ Tim Curwick
 PowerShell? PowerShell. PowerShell: The secrets of PS punctuation
 tips and tricks and deep understanding of how to use little-known functionality of commas, parentheses, periods, asterisks and more to write better PowerShell.
 
+## PowerShell Punctuation Notes
+
+- Don't use alias in your scripts! Best practice is to use tab completion in your scripts.
+- PowerShell procesor has two modes:  Command mode and Expression mode. This will affect interpretation of modulus
+- If your adding items to an array of less than 1000 items, using += is perfectly fine. There isn't that much of a performance hit.
+- Chaining with whitespace. Use it where it makes the code more readable.
+- Unary comma is used to define an array with a single element. E.G. ,1
+- Casting is applied right to left
+- $() has no restrictions of what you put inside of it. PowerShell will treat it as a single pipeline.
+- @() is exactly the same as $(), except the output is always an array
+
 ## Attendees
 
 13
