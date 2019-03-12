@@ -1,0 +1,34 @@
+Background on how it all got started .... Starting with Google Form.
+Overall flow.  Google Form > Google Script > Azure Webhook/Runbook > Flow (or Logic Apps) > back to Azure Webhook/Runbook
+Note, flow is part of Office 365, need enterprise license
+
+Google:
+> Discuss alternatives
+> Start with Form
+> Sheet backend
+> Script (GoogleForm.js) > create trigger > on form Submit > Notify on failure > agree to stuff
+
+Azure:
+> Resource Group
+> Automation Account
+> Webhook (RB MUST be published), walk through creating
+> Go through Runbook 
+    Discuss importance of jobID
+    Index good
+    --Call Flow/Logic App (-ContentType 'application/json' very importantping )
+
+Flow/Logic App:
+> Discuss difference,discuss powerapps (work/school only)
+> show LA
+> mention all the connectors and custom cunnectors
+> Go back and show Self-Provision
+
+Powershell:
+> Rerun job or kick off new
+
+Github:
+> go over Webhook, create in azure, add to github, test
+> ci/cd pipelines
+> build GH sync before azure built it
+> discuss Branch vs Fork
+> Fork, update, commit, PR
