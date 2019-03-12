@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "authorizersEmails": {
+            "type": "string"
+        },
+        "requester": {
+            "type": "string"
+        },
+        "requesterEmail": {
+            "type": "string"
+        },
+        "replayJobID": {
+            "type": "string"
+        },
+        "requesterMessage": {
+            "type": "string"
+        },
+        "approvalMessage": {
+            "type": "string"
+        },
+        "rbURI": {
+            "type": "string"
+        }
+    }
+}
