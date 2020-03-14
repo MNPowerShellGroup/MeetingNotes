@@ -1,0 +1,26 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pr:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: Docker@2
+  inputs:
+    containerRegistry: 'DockerHub'
+    command: 'login'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'DockerHub'
+    repository: 'nexxus916/udsample'
+    command: 'buildAndPush'
+    Dockerfile: '**/Docker/Dockerfile'
+    tags: 'latest'
